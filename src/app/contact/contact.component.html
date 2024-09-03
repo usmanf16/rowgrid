@@ -1,0 +1,14 @@
+<!-- app.component.html -->
+
+<div class="container">
+    <ejs-grid [dataSource]='arr' height='270px' [toolbar]='toolbar' allowReordering='true' [allowRowDragAndDrop]='true' [selectionSettings]='selectOptions' [editSettings]="editSettings" width='80%'>
+      <e-columns>
+        <e-column field='Name' headerText='Name' width=100></e-column>
+        <e-column field='Description' headerText='Description' width=100></e-column>
+        <e-column field='ReferenceStream' headerText='ReferenceStream' width=100></e-column>
+        <e-column field='SaleMode' headerText='SaleMode' width='100'></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+  
+  

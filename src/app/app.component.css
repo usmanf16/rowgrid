@@ -1,0 +1,43 @@
+/* Container for the navigation */
+nav {
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 0;        /* Padding around the navbar */
+  }
+  
+  /* Style the unordered list */
+  #hj {
+    display: flex;          /* Flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    list-style-type: none;  /* Remove bullets */
+    margin: 0;              /* Remove default margin */
+    padding: 0;             /* Remove default padding */
+  }
+  
+  /* Style each list item */
+  #hj li {
+    margin: 0 15px;         /* Spacing between each item */
+  }
+  
+  /* Style the links */
+  #hj li a {
+    color: white;           /* Text color */
+    text-decoration: none;  /* Remove underline from links */
+    padding: 14px 20px;     /* Padding around the links */
+    display: block;         /* Make the link fill the list item */
+    font-weight: bold;      /* Make text bold */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    border-radius: 4px;     /* Slightly rounded corners */
+  }
+  
+  /* Hover effect */
+  #hj li a:hover {
+    background-color: #555; /* Change background on hover */
+    color: #f1f1f1;         /* Change text color on hover */
+  }
+  
+  /* Active link styling */
+  #hj li a.active {
+    background-color: #007bff; /* Highlight the active link */
+    color: white;
+  }
+  
