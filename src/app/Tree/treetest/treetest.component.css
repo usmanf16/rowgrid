@@ -1,0 +1,46 @@
+.caret {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .fas, .far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; /* Ensure correct weight for solid icons */
+  }
+  
+  .fas.fa-caret-down::before {
+    content: "\f0d7"; /* Font Awesome caret down icon */
+  }
+  
+  .fas.fa-caret-right::before {
+    content: "\f0da"; /* Font Awesome caret right icon */
+  }
+  
+  .fas.fa-check-square::before {
+    content: "\f14a"; /* Font Awesome check square icon */
+  }
+  
+  .far.fa-square::before {
+    content: "\f096"; /* Font Awesome square icon */
+  }
+  
+  .fas.fa-minus-square::before {
+    content: "\f146"; /* Font Awesome minus square icon */
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  

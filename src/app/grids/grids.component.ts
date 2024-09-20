@@ -34,7 +34,7 @@ export class GridsComponent implements OnInit {
       headers: new HttpHeaders(headerDict),
     };
 
-    this.http.get<Product[]>('http://localhost:5174/api/Product', requestOptions).subscribe(
+    this.http.get<Product[]>("http://localhost:5174/api/Product", requestOptions).subscribe(
       (res: Product[]) => {
         this.rowData = this.transposeData(res);
         this.createColumns();
@@ -56,11 +56,11 @@ export class GridsComponent implements OnInit {
   
     const transposedData = headers.map((header) => {
       const row: { [key: string]: any } = { Field: header };
-  
+      console.log("row1 ", row)
       data.forEach((item, rowIndex) => {
         row[`Row ${rowIndex + 1}`] = item[header as keyof Product]; // Ensure correct type casting
       });
-  
+      console.log("row ", row)
       return row;
     });
   
@@ -77,7 +77,7 @@ export class GridsComponent implements OnInit {
         field: key,
         width: 150,
         // Optionally specify column type
-        // type: typeof this.rowData[0][key] === 'number' ? 'numericColumn' : 'textColumn'
+         type: typeof this.rowData[0][key] === 'number' ? 'numericColumn' : 'textColumn'
       }));
     }
   }

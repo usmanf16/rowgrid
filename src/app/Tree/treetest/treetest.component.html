@@ -1,0 +1,23 @@
+
+<ul *ngFor="let group of arr; index as i">
+  <span class="font-weight-bold text-primary">{{group.name}}</span>
+  <li *ngFor="let item of group.items; index as j">
+    <span class="cursor-pointer caret"
+      [ngClass]="item.expand ? 'fas fa-caret-down' : 'fas fa-caret-right'"
+      (click)="item.expand = !item.expand"></span>
+    <span class="mx-1" [ngClass]="item.checked ? 'fas fa-check-square' : 
+      (checkMinusSquare(item) ? 'fas fa-minus-square' : 'far fa-square')"
+      (click)="checkParent(i, j)">
+    </span>
+    <span class="cursor-pointer" (click)="item.expand = !item.expand">{{item.name}}</span>
+    <ul [class.d-none]="!item.expand">
+      <li *ngFor="let child of item.childs; index as k">
+        <span class="mr-1" [ngClass]="child.checked ? 'fas fa-check-square' : 'far fa-square'"
+          (click)="checkChild(i, j, k)">
+        </span>
+        <span class="cursor-pointer" (click)="checkChild(i, j, k)">{{child.name}}</span>
+      </li>
+    </ul>
+  </li>
+</ul>
+

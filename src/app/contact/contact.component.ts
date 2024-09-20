@@ -77,7 +77,7 @@ getdetails(){
   };
   
   
-  this.http.get<any[]>("http://localhost:5174/api/Product",requestOptions).subscribe((res:any)=>{
+  this.http.get<any[]>("https://jsonplaceholder.typicode.com/users",requestOptions).subscribe((res:any)=>{
 
     this.arr = res;
     

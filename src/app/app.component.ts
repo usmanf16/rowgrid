@@ -6,8 +6,11 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { RowDDService, SelectionService, ReorderService } from '@syncfusion/ej2-angular-grids';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { TestComponent } from './test/test.component';
 import { ContactComponent } from './contact/contact.component'
+
+
+
 
 
 
@@ -23,8 +26,8 @@ import { RouterModule } from '@angular/router';
 imports: [
         
         GridModule,DialogModule,RouterModule , HomeComponent,
-        AboutComponent,
-        ContactComponent
+        TestComponent ,
+        ContactComponent,TestComponent 
     ],
 
 providers: [ToolbarService, EditService,RouterOutlet, RowDDService, SelectionService, ReorderService ],

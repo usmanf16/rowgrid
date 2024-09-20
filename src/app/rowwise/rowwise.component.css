@@ -1,0 +1,32 @@
+/* Container to hold the grid */
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    width: 100%;             /* Full width of the viewport */
+    padding-top: 20px;       /* Optional: Add some top padding to move the grid down */
+  }
+  
+  /* Ensuring grid takes up the necessary space */
+  .ejs-grid {
+    max-width: 80%;          /* Adjust max-width as needed */
+    width: 100%;             /* Make sure the grid is responsive */
+    margin: 0 auto;          /* Centers the grid within its container */
+  }
+  span {
+    display: block;
+    padding-right: 5px; /* Add some padding for numbers */
+  }
+  
+  
+  
+@media(max-width:600px)
+{
+
+body{
+
+background-color: blue;
+
+}
+
+}
+    
